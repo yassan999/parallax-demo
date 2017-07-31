@@ -1,0 +1,50 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+.first,
+.b {
+    height: 100vh;
+    background-image: url('images/pao.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    p {
+        text-align: center;
+        padding-top: 10vh;
+        font-family: 'Gulim';
+        font-size: 3rem;
+        color: #13B3A1;
+        text-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+}
+@media screen and (max-width: 768px) {
+    .first,
+    .b {
+        background-image: none;
+        &::before {
+            content: "";
+            display: block;
+            min-width: 100vw;
+            min-height: 100vh;
+            background-image: url('images/paosp.png');
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    }
+}
+.a {
+    height: 100vh;
+    background-color: aquamarine;
+}
+.c {
+    height: 100vh;
+    background-color: aqua;
+}

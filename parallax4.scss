@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#para1{
+	background-image: url("images/husky-2485629_1920.jpg");
+	background-position: top center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+div{
+    color: #13B3A1;
+}
+
+.a,.c{
+	height: 100vh;
+	font-size: 40px;
+	background-color: aquamarine;
+	opacity: 0.4;
+}
+
+.b,.d{
+	height: 100vh;
+	font-size: 40px;
+	background-color: coral;
+	opacity: 0.4;
+}
